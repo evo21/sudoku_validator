@@ -1,4 +1,6 @@
+require 'pry'
 require_relative "../lib/validator"
+require_relative "../lib/sudoku_board"
 
 describe "End-to-end test" do
 
