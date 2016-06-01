@@ -52,6 +52,8 @@ class Validator
         bottom_center_quad_check &&
         bottom_right_quad_check
       true
+    else
+      false
     end
   end
 
@@ -64,11 +66,12 @@ class Validator
     false
   end
 
+  private
+
   def self.any_duplicates?(arr_to_check)
     arr_to_check.uniq.length != arr_to_check.length ? true : false
   end
 
-  private
   def self.top_left_quad_check
     quadrant_vals = []
     @board.each do |point|
